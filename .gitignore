@@ -1,0 +1,10 @@
+*.csv
+*.pyc
+*.log
+*.pickle
+*.doctree
+*.svg
+*.less
+*.swp
+*.map
+.idea
