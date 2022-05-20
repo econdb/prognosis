@@ -7,5 +7,6 @@ Created on Fri May 20 00:06:19 2022
 
 
 from .country import Country
+from .country_group import CountryGroup
 
-__all__ = ['Country']
+__all__ = ['Country', 'CountryGroup']

@@ -7,21 +7,7 @@ Created on Fri May 20 12:30:58 2022
 
 import pandas as pd
 from prognosis.helper import get
-
-
-groups = {
-    'national_accounts':
-        ['RGDP%s', 'RPRC%s', 'RPUC%s', 'RGFCF%s', 'REXP%s','RIMP%s'],
-    'prices': ['CPI%s', 'PPI%s'],
-    'government': ['GSPE%s', 'GREV%s', 'GBAL%s', 'GDEBT%s'],
-    'monthly_trade': ['EXPMON%s', 'IMPMON%s'],
-    'yield_curve': ['M3YD%s', 'Y10YD%s'],
-    'retail_sales': ['RETA%s'],
-    'ip': ['IP%s'],
-    'energy':
-        ['OILPROD%s', 'OILDEM%s', 'GASODEM%s', 'GASOPROD%s', 'GASDEM%s',
-         'GASPROD%s'],
-}
+from prognosis.com import topic_tickers
 
 
 class Country():
@@ -29,7 +15,7 @@ class Country():
         self.country_code = country_code
 
     def get_group(self, name):
-        codes = [x % self.country_code for x in groups[name]]
+        codes = [x % self.country_code for x in topic_tickers[name]]
         return get(codes)
 
     def national_accounts(self):
