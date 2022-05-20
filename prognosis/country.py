@@ -18,6 +18,9 @@ groups = {
     'yield_curve': ['M3YD%s', 'Y10YD%s'],
     'retail_sales': ['RETA%s'],
     'ip': ['IP%s'],
+    'energy':
+        ['OILPROD%s', 'OILDEM%s', 'GASODEM%s', 'GASOPROD%s', 'GASDEM%s',
+         'GASPROD%s'],
 }
 
 
@@ -30,6 +33,16 @@ class Country():
         return get(codes)
 
     def national_accounts(self):
+        """
+        RGDP: Real gross domestic product
+        RPRC: Real private consumption
+        RPUC: Real public sector consumption
+        RGFCF: Real gross fixed capital formation
+        REXP: Real exports
+        RIMP: Real imports
+
+        Note: Real refers to inflation adjusted indicators
+        """
         return self.get_group('national_accounts')
 
     def prices(self):
@@ -49,3 +62,14 @@ class Country():
 
     def ip(self):
         return self.get_group('ip')
+
+    def energy(self):
+        """
+        OILPROD: Oil production, thousands barrels per day
+        OILDEM: Oil demand, thousands barrels per day
+        GASODEM: Gasoline demand, thousands barrels per day
+        GASOPROD: Gasoline production, thousands barrels per day
+        GASDEM: Gas demand, millions of cubic meters per month
+        GASPROD: Gas production, millions of cubic meters per month
+        """
+        return self.get_group('energy')
