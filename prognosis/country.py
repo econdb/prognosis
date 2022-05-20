@@ -16,6 +16,8 @@ groups = {
     'government': ['GSPE%s', 'GREV%s', 'GBAL%s', 'GDEBT%s'],
     'monthly_trade': ['EXPMON%s', 'IMPMON%s'],
     'yield_curve': ['M3YD%s', 'Y10YD%s'],
+    'retail_sales': ['RETA%s'],
+    'ip': ['IP%s'],
 }
 
 
@@ -41,3 +43,9 @@ class Country():
 
     def yield_curve(self):
         return self.get_group('yield_curve')
+
+    def retail_sales(self):
+        return self.get_group('retail_sales')
+
+    def ip(self):
+        return self.get_group('ip')
