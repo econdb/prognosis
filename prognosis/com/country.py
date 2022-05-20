@@ -120,3 +120,17 @@ country_list = [
  ('Vietnam', 'VN')]
 
 country_df = pd.DataFrame(country_list, columns=['name', 'iso2'])
+
+country_groups = {
+'Africa': ['DZ', 'AO', 'CD', 'EG', 'ET', 'GH', 'KE', 'LY', 'MA', 'NG', 'SN', 'ZA', 'SD', 'TZ', 'TN'],
+'Central Asia': ['AZ', 'KZ', 'KG', 'MN', 'TJ', 'TM', 'UZ'],
+'East Asia': ['CN', 'HK', 'JP', 'KR', 'MO', 'TW'],
+'Europe': ['AL', 'AT', 'BY', 'BE', 'BA', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'NL', 'NO', 'PL', 'PT', 'RO', 'RU', 'RS', 'SK', 'SI', 'ES', 'SE', 'CH', 'TR', 'UA', 'EU', 'UK'],
+'G20': ['AR', 'AU', 'BR', 'CA', 'CN', 'FR', 'DE', 'IN', 'ID', 'IT', 'JP', 'KR', 'MX', 'RU', 'SA', 'ZA', 'TR', 'US', 'EU', 'UK'],
+'Latin America': ['AR', 'BO', 'BR', 'CL', 'CO', 'CR', 'DO', 'EC', 'SV', 'GT', 'HN', 'NI', 'PA', 'PY', 'PE', 'UY', 'VE'],
+'Middle East': ['IR', 'IQ', 'IL', 'JO', 'KW', 'LB', 'OM', 'QA', 'SA', 'AE'],
+'North America': ['CA', 'MX', 'US'],
+'Oceania': ['AU', 'NZ'],
+'South Asia': ['BD', 'IN', 'NP', 'PK', 'LK'],
+'Southeast Asia': ['KH', 'ID', 'LA', 'MY', 'MM', 'PH', 'SG', 'TH', 'VN']
+}
