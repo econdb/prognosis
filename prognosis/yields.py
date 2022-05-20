@@ -9,7 +9,7 @@ from prognosis.helper import get, yahoo
 
 
 # Daily yield - 10 year curve
-usdyld = get('FRB_H15.37BF6.D.US')
+usdyld = get('FRB_H15.37BF6.D.US', 'M')
 usd3m = get('FRB_H15.4DCCD.M.US')
 houus = get('HOUUS')
 euryld = get('Y10YDDE')
@@ -50,7 +50,7 @@ ex_us *= 4
 dollar_adj_gdp = (gdpus['GDPUS'] + 0.1 * ex_us).dropna()
 
 velocity = (dollar_adj_gdp/m3us['M3US']).dropna().to_frame(name='v')
-usdyld = usdyld.groupby(usdyld.index.map(lambda x: x.replace(day=1))).mean()
+usdyld = usdyld
 
 inflation = cpius.pct_change(12)*100
 

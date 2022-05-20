@@ -8,3 +8,5 @@
 *.swp
 *.map
 .idea
+prognosis.egg-info/*
+dist/*

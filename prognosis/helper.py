@@ -10,10 +10,16 @@ import pandas as pd
 import numpy as np
 import time
 
-def get(code):
-    return pd.read_csv(
-        'https://www.econdb.com/api/series/%s/?format=csv' % code,
+series_endpoint = 'https://www.econdb.com/api/series/'
+
+def get(code, freq=None):
+    ts = pd.read_csv(
+        '%s?ticker=[%s]&format=csv' %
+        (series_endpoint, ','.join(code) if isinstance(code, list) else code),
         index_col='Date', parse_dates=['Date'])
+    if freq == 'M':
+        ts = ts.groupby(ts.index.map(lambda x: x.replace(day=1))).mean()
+    return ts
 
 def yahoo(code):
     ts = (

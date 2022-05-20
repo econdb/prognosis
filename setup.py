@@ -4,40 +4,51 @@ from setuptools import setup, find_packages
 
 
 long_desc = '''Prognosis
-==========
+=========
+
 | This Python module provides a python wrapper around the API of Econdb.com.
-| Prognosis also provides Python abstraction for macroeconomic variables for
-| quick and orderly analysis
+
 Installation
 ------------
-Just type:
-.. code:: bash
-    pip install prognosis
-You can also find `Prognosis on Github
+
+You can also find `Econdb on Github
 <https://github.com/econdb/prognosis/>`_
+
+
+
 Documentation
 -------------
-The documentation on installation, use and API description is found at econdb.com `documentation page. <https://www.econdb.com/documenation/inquisitor/>`_
+
+The documentation on installation, use and API description is found at econdb.com `documentation page. <https://www.econdb.com/documentation/inquisitor/>`_
+
 Usage example
 -------------
+
+
+
 .. code:: python
-	import inquisitor
-	qb = inquisitor.Inquisitor()
-	### List sources
-	qb.sources()
-	### List datasets
-	qb.datasets(source='EU')
-	### Obtain series data
-	qb.series(dataset='EI_BSCO_M')
-   '''
+
+	from prognosis import Country
+	germany = Country('DE')
+
+	### National Accounts
+	nac = germany.national_accounts()
+
+	### Consumer and producer prices
+	prices = germany.prices()
+
+	### Government accounts
+	gov = germany.government_accounts()
+'''
+
 
 setup(
     name='prognosis',
     packages=find_packages(),
-    version='0.0.1',
+    version='0.0.1b',
+    author='Oriol Andres',
     description='A Python client for econdb.com/api/',
     long_description=long_desc,
-    author='Oriol Andres',
     license='MIT License',
     author_email='admin@econdb.com',
     url='https://github.com/econdb/prognosis',
