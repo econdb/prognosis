@@ -12,22 +12,22 @@ Documentation of the API and use examples can be found on the [documentation sit
 
 ### Installation
 
-```pip install inquisitor```
+```pip install prognosis```
 
 ### Quick examples
 
 ```
-import inquisitor
-qb = inquisitor.Inquisitor()
+from prognosis import Country
+germany = Country('DE')
 
-### List sources 
-qb.sources()
+### National Accounts
+nac = germany.national_accounts()
 
-### List datasets
-qb.datasets(source='EU')
+### Consumer and producer prices
+prices = germany.prices()
 
-### Obtain series data
-qb.series(dataset='EI_BSCO_M')
+### Government accounts
+gov = germany.government_accounts()
 ```
 
 ### License

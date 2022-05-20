@@ -10,3 +10,4 @@
 .idea
 prognosis.egg-info/*
 dist/*
+build/*
