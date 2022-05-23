@@ -6,4 +6,4 @@ Created on Fri May 20 15:25:13 2022
 """
 
 from .country import country_df, country_groups
-from .topics import topic_tickers
+from .topics import topic_tickers, topic_df

@@ -8,18 +8,10 @@ long_desc = '''Prognosis
 
 | This Python module provides a python wrapper around the API of Econdb.com.
 
-Installation
-------------
 
 You can also find `Econdb on Github
 <https://github.com/econdb/prognosis/>`_
 
-
-
-Documentation
--------------
-
-The documentation on installation, use and API description is found at econdb.com `documentation page. <https://www.econdb.com/documentation/inquisitor/>`_
 
 Usage example
 -------------

@@ -5,9 +5,7 @@ Created on Thu May 19 23:51:35 2022
 @author: oriol
 """
 
-import requests
 import pandas as pd
-import numpy as np
 import time
 
 series_endpoint = 'https://www.econdb.com/api/series/'

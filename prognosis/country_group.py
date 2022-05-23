@@ -7,34 +7,10 @@ Created on Fri May 20 16:07:36 2022
 
 import pandas as pd
 from prognosis.helper import get
-from prognosis.com import topic_tickers
+from prognosis.com import topic_tickers, topic_df
 
 
-topics = [
- 'RGDP',
- 'RPRC',
- 'RPUC',
- 'RGFCF',
- 'REXP',
- 'RIMP',
- 'CPI',
- 'PPI',
- 'GSPE',
- 'GREV',
- 'GBAL',
- 'GDEBT',
- 'EXPMON',
- 'IMPMON',
- 'M3YD',
- 'Y10YD',
- 'RETA',
- 'IP',
- 'OILPROD',
- 'OILDEM',
- 'GASODEM',
- 'GASOPROD',
- 'GASDEM',
- 'GASPROD']
+topics = topic_df['code'].tolist()
 
 
 class CountryGroup():
