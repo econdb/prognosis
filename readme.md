@@ -167,7 +167,6 @@ germany = Country('DE')
 | Venezuela                    | VE       |
 | Vietnam                      | VN       |
 </details>
-<br>
 
 ### Methods
     
