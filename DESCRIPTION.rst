@@ -1,4 +1,5 @@
-|Python Versions|
+Prognosis
+============
 
 Introduction
 ============
