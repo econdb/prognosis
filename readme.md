@@ -172,13 +172,13 @@ germany = Country('DE')
 
 ### Methods
     
-- <details><summary><code>'prices()'</code></summary>...</details>              
-- <details><summary><code>'monthly_trade()'</code></summary>...</details>      
-- <details><summary><code>'government_accounts()'</code></summary>...</details> 
-- <details><summary><code>'yield_curve()'</code></summary>...</details>         
-- <details><summary><code>'retail_sales()'</code></summary>...</details>        
-- <details><summary><code>'ip()'</code></summary>...</details>                  
-- <details><summary><code>'energy()'</code></summary>...</details>              
+- <details><summary><code>prices()</code></summary>...</details>              
+- <details><summary><code>monthly_trade()</code></summary>...</details>      
+- <details><summary><code>government_accounts()</code></summary>...</details> 
+- <details><summary><code>yield_curve()</code></summary>...</details>         
+- <details><summary><code>retail_sales()</code></summary>...</details>        
+- <details><summary><code>ip()</code></summary>...</details>                  
+- <details><summary><code>energy()</code></summary>...</details>              
 
 ## Country group
 ```python
@@ -211,7 +211,7 @@ custom_group = CountryGroup(['RU' 'US' 'CN'])
 <ul>    
     <li>
         <details>
-            <summary><code>'get_topic(topic)'</code></summary>
+            <summary><code>get_topic(topic)</code></summary>
             <table>
                 <thead>
                     <tr>
@@ -321,6 +321,7 @@ custom_group = CountryGroup(['RU' 'US' 'CN'])
         </details>
     </li>
 </ul>
+
 ## Widget
 
 # License
