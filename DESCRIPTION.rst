@@ -1,9 +1,6 @@
 Prognosis
 ============
 
-Introduction
-============
-
 The mission of the company is to process information in ways that
 facilitate understanding of the economic situation|at different
 granularity levels.
@@ -12,7 +9,7 @@ The sources of data include official statistics agencies|and so-called
 alternative data sources|where we collect direct observations of the
 market and generate aggregate statistics.
 
-Econdb Ltd. is a limited company registered in United Kingdom|with
+Econdb Ltd. is a limited company registered in United Kingdom|with
 company number 10759232.
 
 Table of Contents
@@ -40,11 +37,13 @@ Table of Contents
 
       -  `Methods <#methods-2>`__
 
--  `License <#license>`__ ## Installation
+-  `License <#license>`__
+
+Installation
+------------
 
 This Python module provides a wrapper around the API of Econdb.com.
-You can also find Econdb on Github
-
+You can also find Econdb on `Github <https://github.com/econdb/prognosis>`__
 ::
 
    pip install prognosis
@@ -85,17 +84,8 @@ Available country codes
 
 .. raw:: html
 
-   <details>
-
-.. raw:: html
-
-   <summary>
-
-Countries
-
-.. raw:: html
-
-   </summary>
+   <details> 
+   <summary> Countries </summary> 
 
 ============================ ========
 **Country**                  **Code**
@@ -220,31 +210,29 @@ Vietnam                      ``'VN'``
 Methods
 ~~~~~~~
 
-+-----------------+-----------------------------------------------------+
-| **Method**      | **Description**                                     |
-+=================+=====================================================+
-| ``prices()``    | Consumer and producer price index                   |
-+-----------------+-----------------------------------------------------+
-| ``mo            | Monthly imports and exports, in current prices      |
-| nthly_trade()`` |                                                     |
-+-----------------+-----------------------------------------------------+
-| ``governme      | Quarterly government accounts, in current prices,   |
-| nt_accounts()`` | and government debt                                 |
-+-----------------+-----------------------------------------------------+
-| ``              | 3 month and 10 year bond yields                     |
-| yield_curve()`` |                                                     |
-+-----------------+-----------------------------------------------------+
-| ``r             | Monthly retail sales                                |
-| etail_sales()`` |                                                     |
-+-----------------+-----------------------------------------------------+
-| ``ip()``        | Monthly industrial production                       |
-+-----------------+-----------------------------------------------------+
-| ``energy()``    | Oil, gas, and gasoline production and demand. Data  |
-|                 | source: JODI.                                       |
-+-----------------+-----------------------------------------------------+
-| ``nation        | Quarterly national accounts in constant prices, by  |
-| al_accounts()`` | expenditure                                         |
-+-----------------+-----------------------------------------------------+
++---------------------------+-----------------------------------------+
+| **Method**                | **Description**                         |
++===========================+=========================================+
+| ``prices()``              | Consumer and producer price index       |
++---------------------------+-----------------------------------------+
+| ``monthly_trade()``       | Monthly imports and exports, in current |
+|                           | prices                                  |
++---------------------------+-----------------------------------------+
+| ``government_accounts()`` | Quarterly government accounts, in       |
+|                           | current prices, and government debt     |
++---------------------------+-----------------------------------------+
+| ``yield_curve()``         | 3 month and 10 year bond yields         |
++---------------------------+-----------------------------------------+
+| ``retail_sales()``        | Monthly retail sales                    |
++---------------------------+-----------------------------------------+
+| ``ip()``                  | Monthly industrial production           |
++---------------------------+-----------------------------------------+
+| ``energy()``              | Oil, gas, and gasoline production and   |
+|                           | demand. Data source: JODI.              |
++---------------------------+-----------------------------------------+
+| ``national_accounts()``   | Quarterly national accounts in constant |
+|                           | prices, by expenditure                  |
++---------------------------+-----------------------------------------+
 
 Country group
 -------------
@@ -261,93 +249,44 @@ Available coutry groups
 .. raw:: html
 
    <details>
+   <summary>Groups</summary>
 
-.. raw:: html
-
-   <summary>
-
-Groups
-
-.. raw:: html
-
-   </summary>
-
-+-----+----------------------------------------------------------------+
-| **G | **Included country codes**                                     |
-| rou |                                                                |
-| p** |                                                                |
-+=====+================================================================+
-| ``' | [‘DZ’ ‘AO’ ‘CD’ ‘EG’ ‘ET’ ‘GH’ ‘KE’ ‘LY’ ‘MA’ ‘NG’ ‘SN’ ‘ZA’   |
-| Afr | ‘SD’ ‘TZ’ ‘TN’]                                                |
-| ica |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| ``' | [‘AZ’ ‘KZ’ ‘KG’ ‘MN’ ‘TJ’ ‘TM’ ‘UZ’]                           |
-| Cen |                                                                |
-| tra |                                                                |
-| l A |                                                                |
-| sia |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| ``' | [‘CN’ ‘HK’ ‘JP’ ‘KR’ ‘MO’ ‘TW’]                                |
-| Eas |                                                                |
-| t A |                                                                |
-| sia |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| ``' | [‘AL’ ‘AT’ ‘BY’ ‘BE’ ‘BA’ ‘BG’ ‘HR’ ‘CY’ ‘CZ’ ‘DK’ ‘EE’ ‘FI’   |
-| Eur | ‘FR’ ‘DE’ ‘GR’ ‘HU’ ‘IE’ ‘IT’ ‘LV’ ‘LT’ ‘LU’ ‘NL’ ‘NO’ ‘PL’    |
-| ope | ‘PT’ ‘RO’ ‘RU’ ‘RS’ ‘SK’ ‘SI’ ‘ES’ ‘SE’ ‘CH’ ‘TR’ ‘UA’ ‘EU’    |
-| '`` | ‘UK’]                                                          |
-+-----+----------------------------------------------------------------+
-| ``' | [‘AR’ ‘AU’ ‘BR’ ‘CA’ ‘CN’ ‘FR’ ‘DE’ ‘IN’ ‘ID’ ‘IT’ ‘JP’ ‘KR’   |
-| G20 | ‘MX’ ‘RU’ ‘SA’ ‘ZA’ ‘TR’ ‘US’ ‘EU’ ‘UK’]                       |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| `   | [‘AR’ ‘BO’ ‘BR’ ‘CL’ ‘CO’ ‘CR’ ‘DO’ ‘EC’ ‘SV’ ‘GT’ ‘HN’ ‘NI’   |
-| `'L | ‘PA’ ‘PY’ ‘PE’ ‘UY’ ‘VE’]                                      |
-| ati |                                                                |
-| n A |                                                                |
-| mer |                                                                |
-| ica |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| ``  | [‘IR’ ‘IQ’ ‘IL’ ‘JO’ ‘KW’ ‘LB’ ‘OM’ ‘QA’ ‘SA’ ‘AE’]            |
-| 'Mi |                                                                |
-| ddl |                                                                |
-| e E |                                                                |
-| ast |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| `   | [‘CA’ ‘MX’ ‘US’]                                               |
-| `'N |                                                                |
-| ort |                                                                |
-| h A |                                                                |
-| mer |                                                                |
-| ica |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| `   | [‘AU’ ‘NZ’]                                                    |
-| `'O |                                                                |
-| cea |                                                                |
-| nia |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| `   | [‘BD’ ‘IN’ ‘NP’ ‘PK’ ‘LK’]                                     |
-| `'S |                                                                |
-| out |                                                                |
-| h A |                                                                |
-| sia |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
-| ``  | [‘KH’ ‘ID’ ‘LA’ ‘MY’ ‘MM’ ‘PH’ ‘SG’ ‘TH’ ‘VN’]                 |
-| 'So |                                                                |
-| uth |                                                                |
-| eas |                                                                |
-| t A |                                                                |
-| sia |                                                                |
-| '`` |                                                                |
-+-----+----------------------------------------------------------------+
++----------------------+----------------------------------------------+
+| **Group**            | **Included country codes**                   |
++======================+==============================================+
+| ``'Africa'``         | ['DZ' 'AO' 'CD' 'EG' 'ET' 'GH' 'KE' 'LY'     |
+|                      | 'MA' 'NG' 'SN' 'ZA' 'SD' 'TZ' 'TN']          |
++----------------------+----------------------------------------------+
+| ``'Central Asia'``   | ['AZ' 'KZ' 'KG' 'MN' 'TJ' 'TM' 'UZ']         |
++----------------------+----------------------------------------------+
+| ``'East Asia'``      | ['CN' 'HK' 'JP' 'KR' 'MO' 'TW']              |
++----------------------+----------------------------------------------+
+| ``'Europe'``         | ['AL' 'AT' 'BY' 'BE' 'BA' 'BG' 'HR' 'CY'     |
+|                      | 'CZ' 'DK' 'EE' 'FI' 'FR' 'DE' 'GR' 'HU' 'IE' |
+|                      | 'IT' 'LV' 'LT' 'LU' 'NL' 'NO' 'PL' 'PT' 'RO' |
+|                      | 'RU' 'RS' 'SK' 'SI' 'ES' 'SE' 'CH' 'TR' 'UA' |
+|                      | 'EU' 'UK']                                   |
++----------------------+----------------------------------------------+
+| ``'G20'``            | ['AR' 'AU' 'BR' 'CA' 'CN' 'FR' 'DE' 'IN'     |
+|                      | 'ID' 'IT' 'JP' 'KR' 'MX' 'RU' 'SA' 'ZA' 'TR' |
+|                      | 'US' 'EU' 'UK']                              |
++----------------------+----------------------------------------------+
+| ``'Latin America'``  | ['AR' 'BO' 'BR' 'CL' 'CO' 'CR' 'DO' 'EC'     |
+|                      | 'SV' 'GT' 'HN' 'NI' 'PA' 'PY' 'PE' 'UY'      |
+|                      | 'VE']                                        |
++----------------------+----------------------------------------------+
+| ``'Middle East'``    | ['IR' 'IQ' 'IL' 'JO' 'KW' 'LB' 'OM' 'QA'     |
+|                      | 'SA' 'AE']                                   |
++----------------------+----------------------------------------------+
+| ``'North America'``  | ['CA' 'MX' 'US']                             |
++----------------------+----------------------------------------------+
+| ``'Oceania'``        | ['AU' 'NZ']                                  |
++----------------------+----------------------------------------------+
+| ``'South Asia'``     | ['BD' 'IN' 'NP' 'PK' 'LK']                   |
++----------------------+----------------------------------------------+
+| ``'Southeast Asia'`` | ['KH' 'ID' 'LA' 'MY' 'MM' 'PH' 'SG' 'TH'     |
+|                      | 'VN']                                        |
++----------------------+----------------------------------------------+
 
 .. raw:: html
 
@@ -360,27 +299,12 @@ Methods
 
 .. raw:: html
 
-   <ul>
-
-.. raw:: html
-
+   <ul>    
    <li>
-
-.. raw:: html
-
    <details>
-
-.. raw:: html
-
-   <summary>
-
-get_topic(topic)
-
-.. raw:: html
-
-   </summary>
-
-Available topics
+   <summary><code>get_topic(topic)</code></summary>
+   <br>
+   Available topics
 
 ============== ==============================================
 **Topic**      **Desctiption**
@@ -487,13 +411,7 @@ Available topics
 .. raw:: html
 
    </details>
-
-.. raw:: html
-
    </li>
-
-.. raw:: html
-
    </ul>
 
 Widget
@@ -513,72 +431,24 @@ Methods
 
    .. raw:: html
 
-      <details>
-
-   .. raw:: html
-
-      <summary>
-
-   get_widget_data(widget_name, opts)
-
-   .. raw:: html
-
-      </summary>
-
-   …
-
-   .. raw:: html
-
-      </details>
+      <details><summary><code>get_widget_data(widget_name, opts)</code></summary>...</details>       
 
 -  
 
    .. raw:: html
 
-      <details>
-
-   .. raw:: html
-
-      <summary>
-
-   get_widget_options(widget_name)
-
-   .. raw:: html
-
-      </summary>
-
-   …
-
-   .. raw:: html
-
-      </details>
+      <details><summary><code>get_widget_options(widget_name)</code></summary>...</details>       
 
 -  
 
    .. raw:: html
 
-      <details>
-
-   .. raw:: html
-
-      <summary>
-
-   get_available_widgets()
-
-   .. raw:: html
-
-      </summary>
-
-   …
-
-   .. raw:: html
-
-      </details>
+      <details><summary><code>get_available_widgets()</code></summary>...</details>       
 
 License
 =======
 
 MIT
 
-.. |Python Versions| image:: vertopal_74052250b01143f6b91ff3d03475b234/5395502e3798aede250416c9723afbdd2ce38207.svg
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/prognosis.svg
    :target: https://pypi.python.org/pypi/prognosis
