@@ -11,3 +11,7 @@
 prognosis.egg-info/*
 dist/*
 build/*
+pyvenv.cfg
+/bin
+/share
+/lib
