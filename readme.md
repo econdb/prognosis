@@ -173,14 +173,16 @@ germany = Country('DE')
 
 ### Methods
     
-- <details><summary><code>prices()</code></summary>Consumer and producer price index</details>              
-- <details><summary><code>monthly_trade()</code></summary>Monthly imports and exports, in current prices</details>      
-- <details><summary><code>government_accounts()</code></summary>Quarterly government accounts, in current prices, and government debt</details> 
-- <details><summary><code>yield_curve()</code></summary>3 month and 10 year bond yields</details>         
-- <details><summary><code>retail_sales()</code></summary>Monthly retail sales</details>        
-- <details><summary><code>ip()</code></summary>Monthly industrial production</details>                  
-- <details><summary><code>energy()</code></summary>Oil, gas, and gasoline production and demand. Data source: JODI.</details>        
-- <details><summary><code>national_accounts()</code></summary>Quarterly national accounts in constant prices, by expenditure</details>         
+| **Method**                  | **Description** |
+| ---------------------------- | -------- |
+| `prices()`                | Consumer and producer price index   |
+|`monthly_trade()`|Monthly imports and exports, in current prices|
+|`government_accounts()`|Quarterly government accounts, in current prices, and government debt|
+|`yield_curve()`|3 month and 10 year bond yields|
+|`retail_sales()`|Monthly retail sales|
+|`ip()`|Monthly industrial production|
+|`energy()`|Oil, gas, and gasoline production and demand. Data source: JODI.|
+|`national_accounts()`|Quarterly national accounts in constant prices, by expenditure|       
 
 ## Country group
 ```python
