@@ -173,16 +173,16 @@ germany = Country('DE')
 
 ### Methods
     
-| **Method**                  | **Description** |
-| ---------------------------- | -------- |
-| `prices()`                | Consumer and producer price index   |
-|`monthly_trade()`|Monthly imports and exports, in current prices|
-|`government_accounts()`|Quarterly government accounts, in current prices, and government debt|
-|`yield_curve()`|3 month and 10 year bond yields|
-|`retail_sales()`|Monthly retail sales|
-|`ip()`|Monthly industrial production|
-|`energy()`|Oil, gas, and gasoline production and demand. Data source: JODI.|
-|`national_accounts()`|Quarterly national accounts in constant prices, by expenditure|       
+| **Method**              | **Description**                                                       |
+| ----------------------- | --------------------------------------------------------------------- |
+| `prices()`              | Consumer and producer price index                                     |
+| `monthly_trade()`       | Monthly imports and exports, in current prices                        |
+| `government_accounts()` | Quarterly government accounts, in current prices, and government debt |
+| `yield_curve()`         | 3 month and 10 year bond yields                                       |
+| `retail_sales()`        | Monthly retail sales                                                  |
+| `ip()`                  | Monthly industrial production                                         |
+| `energy()`              | Oil, gas, and gasoline production and demand. Data source: JODI.      |
+| `national_accounts()`   | Quarterly national accounts in constant prices, by expenditure        |
 
 ## Country group
 ```python
@@ -195,137 +195,131 @@ custom_group = CountryGroup(['RU' 'US' 'CN'])
 <details>
 <summary>Groups</summary>
 
-| **Group**          | **Included country codes**                                                                                                                                                                                                      |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `'Africa'`         | ['DZ' 'AO' 'CD' 'EG' 'ET' 'GH' 'KE' 'LY' 'MA' 'NG' 'SN' 'ZA' 'SD' 'TZ' 'TN']                                                                                                                                     |
-| `'Central Asia'`   | ['AZ' 'KZ' 'KG' 'MN' 'TJ' 'TM' 'UZ']                                                                                                                                                                                     |
-| `'East Asia'`      | ['CN' 'HK' 'JP' 'KR' 'MO' 'TW']                                                                                                                                                                                           |
+| **Group**          | **Included country codes**                                                                                                                                                                 |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `'Africa'`         | ['DZ' 'AO' 'CD' 'EG' 'ET' 'GH' 'KE' 'LY' 'MA' 'NG' 'SN' 'ZA' 'SD' 'TZ' 'TN']                                                                                                               |
+| `'Central Asia'`   | ['AZ' 'KZ' 'KG' 'MN' 'TJ' 'TM' 'UZ']                                                                                                                                                       |
+| `'East Asia'`      | ['CN' 'HK' 'JP' 'KR' 'MO' 'TW']                                                                                                                                                            |
 | `'Europe'`         | ['AL' 'AT' 'BY' 'BE' 'BA' 'BG' 'HR' 'CY' 'CZ' 'DK' 'EE' 'FI' 'FR' 'DE' 'GR' 'HU' 'IE' 'IT' 'LV' 'LT' 'LU' 'NL' 'NO' 'PL' 'PT' 'RO' 'RU' 'RS' 'SK' 'SI' 'ES' 'SE' 'CH' 'TR' 'UA' 'EU' 'UK'] |
-| `'G20'`            | ['AR' 'AU' 'BR' 'CA' 'CN' 'FR' 'DE' 'IN' 'ID' 'IT' 'JP' 'KR' 'MX' 'RU' 'SA' 'ZA' 'TR' 'US' 'EU' 'UK']                                                                                                       |
-| `'Latin America'`  | ['AR' 'BO' 'BR' 'CL' 'CO' 'CR' 'DO' 'EC' 'SV' 'GT' 'HN' 'NI' 'PA' 'PY' 'PE' 'UY' 'VE']                                                                                                                         |
-| `'Middle East'`    | ['IR' 'IQ' 'IL' 'JO' 'KW' 'LB' 'OM' 'QA' 'SA' 'AE']                                                                                                                                                                   |
-| `'North America'`  | ['CA' 'MX' 'US']                                                                                                                                                                                                             |
-| `'Oceania'`        | ['AU' 'NZ']                                                                                                                                                                                                                   |
-| `'South Asia'`     | ['BD' 'IN' 'NP' 'PK' 'LK']                                                                                                                                                                                                 |
-| `'Southeast Asia'` | ['KH' 'ID' 'LA' 'MY' 'MM' 'PH' 'SG' 'TH' 'VN']                                                                                                                                                                          |
+| `'G20'`            | ['AR' 'AU' 'BR' 'CA' 'CN' 'FR' 'DE' 'IN' 'ID' 'IT' 'JP' 'KR' 'MX' 'RU' 'SA' 'ZA' 'TR' 'US' 'EU' 'UK']                                                                                      |
+| `'Latin America'`  | ['AR' 'BO' 'BR' 'CL' 'CO' 'CR' 'DO' 'EC' 'SV' 'GT' 'HN' 'NI' 'PA' 'PY' 'PE' 'UY' 'VE']                                                                                                     |
+| `'Middle East'`    | ['IR' 'IQ' 'IL' 'JO' 'KW' 'LB' 'OM' 'QA' 'SA' 'AE']                                                                                                                                        |
+| `'North America'`  | ['CA' 'MX' 'US']                                                                                                                                                                           |
+| `'Oceania'`        | ['AU' 'NZ']                                                                                                                                                                                |
+| `'South Asia'`     | ['BD' 'IN' 'NP' 'PK' 'LK']                                                                                                                                                                 |
+| `'Southeast Asia'` | ['KH' 'ID' 'LA' 'MY' 'MM' 'PH' 'SG' 'TH' 'VN']                                                                                                                                             |
 </details>
 
 ### Methods
 
 <ul>    
-    <li>
-        <details>
-            <summary><code>get_topic(topic)</code></summary>
-            <br>
-            <p>Available topics</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th><strong>Topic</strong></th>
-                        <th><strong>Description</strong></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td><code>'GDP'</code></td> <td>Gross domestic product</td></tr>
-                    <tr><td><code>'PRC'</code></td> <td>Private consumption</td></tr>
-                    <tr><td><code>'CON'</code></td> <td>Total consumption</td></tr>
-                    <tr><td><code>'GCF'</code></td> <td>Gross capital formation</td></tr>
-                    <tr><td><code>'GFCF'</code></td> <td>Gross fixed capital formation</td></tr>
-                    <tr><td><code>'CI'</code></td> <td>Change in inventories</td></tr>
-                    <tr><td><code>'CBAL'</code></td> <td>Commercial balance (goods + services</tr></td></tr>
-                    <tr><td><code>'EXP'</code></td> <td>Exports of goods and services</td></tr>
-                    <tr><td><code>'IMP'</code></td> <td>Imports of goods and services</td></tr>
-                    <tr><td><code>'PI'</code></td> <td>Personal income</td></tr>
-                    <tr><td><code>'RGDP'</code></td> <td>Real gross domestic product</td></tr>
-                    <tr><td><code>'RPRC'</code></td> <td>Real private consumption</td></tr>
-                    <tr><td><code>'RPUC'</code></td> <td>Real public consumption</td></tr>
-                    <tr><td><code>'RCON'</code></td> <td>Real total consumption</td></tr>
-                    <tr><td><code>'RGCF'</code></td> <td>Real gross capital formation</td></tr>
-                    <tr><td><code>'RGFCF'</code></td> <td>Real gross fixed capital formation<td></tr>
-                    <tr><td><code>'RCI'</code></td> <td>Real change in inventories</td></tr>
-                    <tr><td><code>'REXP'</code></td> <td>Real exports of goods and services</td></tr>
-                    <tr><td><code>'RIMP'</code></td> <td>Real imports of goods and services</td></tr>
-                    <tr><td><code>'GDPPC'</code></td> <td>GDP per capita</td></tr>
-                    <tr><td><code>'RGDPPC'</code></td> <td>Real GDP per capita</td></tr>
-                    <tr><td><code>'GDPD'</code></td> <td>GDP (current US dollars</tr></td></tr>
-                    <tr><td><code>'GDPDEF'</code></td> <td>GDP deflator</td></tr>
-                    <tr><td><code>'CPI'</code></td> <td>Consumer price index</td></tr>
-                    <tr><td><code>'CORE'</code></td> <td>Core consumer price index</td></tr>
-                    <tr><td><code>'PPI'</code></td> <td>Producer price index</td></tr>
-                    <tr><td><code>'URATE'</code></td> <td>Unemployment</td></tr>
-                    <tr><td><code>'JVR'</code></td> <td>Job vacancy rate</td></tr>
-                    <tr><td><code>'JQR'</code></td> <td>Job quits rate</td></tr>
-                    <tr><td><code>'JLR'</code></td> <td>Job layoffs rate</td></tr>
-                    <tr><td><code>'JHR'</code></td> <td>Job hires rate</td></tr>
-                    <tr><td><code>'WAGE'</code></td> <td>Wages/Earnings</td></tr>
-                    <tr><td><code>'WAGEMAN'</code></td> <td>Hourly wage manufacturing</td></tr>
-                    <tr><td><code>'EMP'</code></td> <td>Total employment</td></tr>
-                    <tr><td><code>'ACPOP'</code></td> <td>Active population</td></tr>
-                    <tr><td><code>'PAY'</code></td> <td>Total payroll</td></tr>
-                    <tr><td><code>'EMRATIO'</code></td> <td>Employment to working age population</td></tr>
-                    <tr><td><code>'PART'</code></td> <td>Participation rate</td></tr>
-                    <tr><td><code>'CLAIMS'</code></td> <td>Weekly unemployment insurance claims</td></tr>
-                    <tr><td><code>'RETA'</code></td> <td>Retail trade</td></tr>
-                    <tr><td><code>'IP'</code></td> <td>Industrial production</td></tr>
-                    <tr><td><code>'CP'</code></td> <td>Construction production</td></tr>
-                    <tr><td><code>'INVER'</code></td> <td>Investment rate</td></tr>
-                    <tr><td><code>'SENT'</code></td> <td>Sentiment index</td></tr>
-                    <tr><td><code>'CONF'</code></td> <td>Consumer confidence index</td></tr>
-                    <tr><td><code>'UTIL'</code></td> <td>Utilization rate</td></tr>
-                    <tr><td><code>'DWPE'</code></td> <td>Dwelling permits</td></tr>
-                    <tr><td><code>'NFCI'</code></td> <td>Non-financial corporations investment rate</td></tr>
-                    <tr><td><code>'CAR'</code></td> <td>Passenger car sales</td></tr>
-                    <tr><td><code>'ELE'</code></td> <td>Production electricity</td></tr>
-                    <tr><td><code>'ARIV'</code></td> <td>Tourist arrivals</td></tr>
-                    <tr><td><code>'OIL'</code></td> <td>Oil production</td></tr>
-                    <tr><td><code>'MANU'</code></td> <td>Manufacturing production</td></tr>
-                    <tr><td><code>'CLI'</code></td> <td>OECD CLI</td></tr>
-                    <tr><td><code>'TB'</code></td> <td>Trade balance</td></tr>
-                    <tr><td><code>'NY'</code></td> <td>Net income from abroad (Primary Income)</td></tr>
-                    <tr><td><code>'NCT'</code></td> <td>Net current transfers (Secondary Income)</td></tr>
-                    <tr><td><code>'CA'</code></td> <td>Current account balance</td></tr>
-                    <tr><td><code>'KA'</code></td> <td>Capital account</td></tr>
-                    <tr><td><code>'CKA'</code></td> <td>Net foreign investment</td></tr>
-                    <tr><td><code>'IIPA'</code></td> <td>International investment position: Assets</td></tr>
-                    <tr><td><code>'IIPL'</code></td> <td>International investment position: Liabilities</td></tr>
-                    <tr><td><code>'NIIP'</code></td> <td>Net international investment position</td></tr>
-                    <tr><td><code>'EXPMON'</code></td> <td>Monthly exports</td></tr>
-                    <tr><td><code>'IMPMON'</code></td> <td>Monthly imports</td></tr>
-                    <tr><td><code>'GBAL'</code></td> <td>Government balance</td></tr>
-                    <tr><td><code>'GSPE'</code></td> <td>General government total expenditure</td></tr>
-                    <tr><td><code>'GREV'</code></td> <td>General government total revenue</td></tr>
-                    <tr><td><code>'GDEBT'</code></td> <td>Government debt</td></tr>
-                    <tr><td><code>'GDEBTN'</code></td> <td>Government net debt</td></tr>
-                    <tr><td><code>'POP'</code></td> <td>Population</td></tr>
-                    <tr><td><code>'HHS'</code></td> <td>Household saving</td></tr>
-                    <tr><td><code>'HHDIR'</code></td> <td>Household debt to income ratio</td></tr>
-                    <tr><td><code>'HOU'</code></td> <td>House price</td></tr>
-                    <tr><td><code>'TFRT'</code></td> <td>Fertility rate</td></tr>
-                    <tr><td><code>'LE00'</code></td> <td>Life expectancy at birth</td></tr>
-                    <tr><td><code>'CRED'</code></td> <td>Domestic credit</td></tr>
-                    <tr><td><code>'NFCLOAN'</code></td> <td>Lending to non-financial corporations</td></tr>
-                    <tr><td><code>'PRIDEBT'</code></td> <td>Private debt</td></tr>
-                    <tr><td><code>'NPL'</code></td> <td>Non performing loans</td></tr>
-                    <tr><td><code>'MB'</code></td> <td>Monetary base</td></tr>
-                    <tr><td><code>'M3'</code></td> <td>Money supply</td></tr>
-                    <tr><td><code>'Y10YD'</code></td> <td>Long term yield</td></tr>
-                    <tr><td><code>'M3YD'</code></td> <td>3 month yield</td></tr>
-                    <tr><td><code>'IBD1'</code></td> <td>Interbank lending overnight rate</td></tr>
-                    <tr><td><code>'POLIR'</code></td> <td>Policy rate - short term</td></tr>
-                    <tr><td><code>'XUSD'</code></td> <td>Exchange rate v dollar</td></tr>
-                    <tr><td><code>'SEI'</code></td> <td>Stock exchange index</td></tr>
-                    <tr><td><code>'REER'</code></td> <td>Real effective exchange rate</td></tr>
-                    <tr><td><code>'EQYCAP'</code></td> <td>Market capitalization</td></tr>
-                    <tr><td><code>'OILPROD'</code></td> <td>Oil production</td></tr>
-                    <tr><td><code>'OILDEM'</code></td> <td>Oil demand</td></tr>
-                    <tr><td><code>'GASPROD'</code></td> <td>Gas production</td></tr>
-                    <tr><td><code>'GASDEM'</code></td> <td>Gas demand</td></tr>
-                    <tr><td><code>'GASOPROD'</code></td> <td>Gasoline production</td></tr>
-                    <tr><td><code>'GASODEM'</code></td> <td>Gasoline demand</td></tr>
-                </tbody>
-            </table>
-        </details>
-    </li>
+<li>
+<details>
+<summary><code>get_topic(topic)</code></summary>
+<br>
+Available topics
+
+| **Country** | **Code**                                       |
+| ----------- | ---------------------------------------------- |
+| 'GDP'       | Gross domestic product                         |
+| 'PRC'       | Private consumption                            |
+| 'PUC'       | Public consumption                             |
+| 'CON'       | Total consumption                              |
+| 'GCF'       | Gross capital formation                        |
+| 'GFCF'      | Gross fixed capital formation                  |
+| 'CI'        | Change in inventories                          |
+| 'CBAL'      | Commercial balance (goods + services)          |
+| 'EXP'       | Exports of goods and services                  |
+| 'IMP'       | Imports of goods and services                  |
+| 'PI'        | Personal income                                |
+| 'RGDP'      | Real gross domestic product                    |
+| 'RPRC'      | Real private consumption                       |
+| 'RPUC'      | Real public consumption                        |
+| 'RCON'      | Real total consumption                         |
+| 'RGCF'      | Real gross capital formation                   |
+| 'RGFCF'     | Real gross fixed capital formation             |
+| 'RCI'       | Real change in inventories                     |
+| 'REXP'      | Real exports of goods and services             |
+| 'RIMP'      | Real imports of goods and services             |
+| 'GDPPC'     | GDP per capita                                 |
+| 'RGDPPC'    | Real GDP per capita                            |
+| 'GDPD'      | GDP (current US dollars)                       |
+| 'GDPDEF'    | GDP deflator                                   |
+| 'CPI'       | Consumer price index                           |
+| 'CORE'      | Core consumer price index                      |
+| 'PPI'       | Producer price index                           |
+| 'URATE'     | Unemployment                                   |
+| 'JVR'       | Job vacancy rate                               |
+| 'JQR'       | Job quits rate                                 |
+| 'JLR'       | Job layoffs rate                               |
+| 'JHR'       | Job hires rate                                 |
+| 'WAGE'      | Wages/Earnings                                 |
+| 'WAGEMAN'   | Hourly wage manufacturing                      |
+| 'EMP'       | Total employment                               |
+| 'ACPOP'     | Active population                              |
+| 'PAY'       | Total payroll                                  |
+| 'EMRATIO'   | Employment to working age population           |
+| 'PART'      | Participation rate                             |
+| 'CLAIMS'    | Weekly unemployment insurance claims           |
+| 'RETA'      | Retail trade                                   |
+| 'IP'        | Industrial production                          |
+| 'CP'        | Construction production                        |
+| 'INVER'     | Investment rate                                |
+| 'SENT'      | Sentiment index                                |
+| 'CONF'      | Consumer confidence index                      |
+| 'UTIL'      | Utilization rate                               |
+| 'DWPE'      | Dwelling permits                               |
+| 'NFCI'      | Non-financial corporations investment rate     |
+| 'CAR'       | Passenger car sales                            |
+| 'ELE'       | Production electricity                         |
+| 'ARIV'      | Tourist arrivals                               |
+| 'OIL'       | Oil production                                 |
+| 'MANU'      | Manufacturing production                       |
+| 'CLI'       | OECD CLI                                       |
+| 'TB'        | Trade balance                                  |
+| 'NY'        | Net income from abroad (Primary Income)        |
+| 'NCT'       | Net current transfers (Secondary Income)       |
+| 'CA'        | Current account balance                        |
+| 'KA'        | Capital account                                |
+| 'CKA'       | Net foreign investment                         |
+| 'IIPA'      | International investment position: Assets      |
+| 'IIPL'      | International investment position: Liabilities |
+| 'NIIP'      | Net international investment position          |
+| 'EXPMON'    | Monthly exports                                |
+| 'IMPMON'    | Monthly imports                                |
+| 'GBAL'      | Government balance                             |
+| 'GSPE'      | General government total expenditure           |
+| 'GREV'      | General government total revenue               |
+| 'GDEBT'     | Government debt                                |
+| 'GDEBTN'    | Government net debt                            |
+| 'POP'       | Population                                     |
+| 'HHS'       | Household saving                               |
+| 'HHDIR'     | Household debt to income ratio                 |
+| 'HOU'       | House price                                    |
+| 'TFRT'      | Fertility rate                                 |
+| 'LE00'      | Life expectancy at birth                       |
+| 'CRED'      | Domestic credit                                |
+| 'NFCLOAN'   | Lending to non-financial corporations          |
+| 'PRIDEBT'   | Private debt                                   |
+| 'NPL'       | Non performing loans                           |
+| 'MB'        | Monetary base                                  |
+| 'M3'        | Money supply                                   |
+| 'Y10YD'     | Long term yield                                |
+| 'M3YD'      | 3 month yield                                  |
+| 'IBD1'      | Interbank lending overnight rate               |
+| 'POLIR'     | Policy rate - short term                       |
+| 'XUSD'      | Exchange rate v dollar                         |
+| 'SEI'       | Stock exchange index                           |
+| 'REER'      | Real effective exchange rate                   |
+| 'EQYCAP'    | Market capitalization                          |
+| 'OILPROD'   | Oil production                                 |
+| 'OILDEM'    | Oil demand                                     |
+| 'GASPROD'   | Gas production                                 |
+| 'GASDEM'    | Gas demand                                     |
+| 'GASOPROD'  | Gasoline production                            |
+| 'GASODEM'   | Gasoline demand                                |
+</details>
+</li>
 </ul>
 
 ## Widget
