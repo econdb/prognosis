@@ -21,6 +21,7 @@ Econdb Ltd. is a limited company registered in United Kingdom|with company numbe
     - [Available coutry groups](#available-coutry-groups)
     - [Methods](#methods-1)
   - [Widget](#widget)
+    - [Methods](#methods-2)
 - [License](#license)
 ## Installation
 
@@ -212,6 +213,8 @@ custom_group = CountryGroup(['RU' 'US' 'CN'])
     <li>
         <details>
             <summary><code>get_topic(topic)</code></summary>
+            <br>
+            <p>Available topics</p>
             <table>
                 <thead>
                     <tr>
@@ -323,6 +326,14 @@ custom_group = CountryGroup(['RU' 'US' 'CN'])
 </ul>
 
 ## Widget
+```python
+from prognosis.widget import get_widget_data
+get_widget_data("supermarket-country-index", {'country': 'US'})
+```
+### Methods
+- <details><summary><code>get_widget_data(widget_name, opts)</code></summary>...</details>       
+- <details><summary><code>get_widget_options(widget_name)</code></summary>...</details>       
+- <details><summary><code>get_available_widgets()</code></summary>...</details>       
 
 # License
 MIT
