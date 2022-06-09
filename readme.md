@@ -47,6 +47,7 @@ gov = germany.government_accounts()
 # Api reference
 ## Country
 ```python
+from prognosis import Country
 germany = Country('DE')
 ```
 ### Available country codes
@@ -55,123 +56,123 @@ germany = Country('DE')
 
 | **Country**                  | **Code** |
 | ---------------------------- | -------- |
-| Albania                      | AL       |
-| Algeria                      | DZ       |
-| Angola                       | AO       |
-| Argentina                    | AR       |
-| Australia                    | AU       |
-| Austria                      | AT       |
-| Azerbaijan                   | AZ       |
-| Bangladesh                   | BD       |
-| Belarus                      | BY       |
-| Belgium                      | BE       |
-| Bolivia                      | BO       |
-| Bosnia And Herzegovina       | BA       |
-| Brazil                       | BR       |
-| Bulgaria                     | BG       |
-| Cambodia                     | KH       |
-| Canada                       | CA       |
-| Chile                        | CL       |
-| China                        | CN       |
-| Colombia                     | CO       |
-| Costa Rica                   | CR       |
-| Croatia                      | HR       |
-| Cyprus                       | CY       |
-| Czechia                      | CZ       |
-| Democratic Republic Of Congo | CD       |
-| Denmark                      | DK       |
-| Dominican Republic           | DO       |
-| Ecuador                      | EC       |
-| Egypt                        | EG       |
-| El Salvador                  | SV       |
-| Estonia                      | EE       |
-| Ethiopia                     | ET       |
-| European Union               | EU       |
-| Finland                      | FI       |
-| France                       | FR       |
-| Germany                      | DE       |
-| Ghana                        | GH       |
-| Greece                       | GR       |
-| Guatemala                    | GT       |
-| Honduras                     | HN       |
-| Hong  Kong                   | HK       |
-| Hungary                      | HU       |
-| India                        | IN       |
-| Indonesia                    | ID       |
-| Iran                         | IR       |
-| Iraq                         | IQ       |
-| Ireland                      | IE       |
-| Israel                       | IL       |
-| Italy                        | IT       |
-| Japan                        | JP       |
-| Jordan                       | JO       |
-| Kazakhstan                   | KZ       |
-| Kenya                        | KE       |
-| Kuwait                       | KW       |
-| Kyrgyzstan                   | KG       |
-| Laos                         | LA       |
-| Latvia                       | LV       |
-| Lebanon                      | LB       |
-| Libya                        | LY       |
-| Lithuania                    | LT       |
-| Luxembourg                   | LU       |
-| Macao                        | MO       |
-| Malaysia                     | MY       |
-| Mexico                       | MX       |
-| Mongolia                     | MN       |
-| Morocco                      | MA       |
-| Myanmar                      | MM       |
-| Nepal                        | NP       |
-| Netherlands                  | NL       |
-| New Zealand                  | NZ       |
-| Nicaragua                    | NI       |
-| Nigeria                      | NG       |
-| Norway                       | NO       |
-| Oman                         | OM       |
-| Pakistan                     | PK       |
-| Panama                       | PA       |
-| Paraguay                     | PY       |
-| Peru                         | PE       |
-| Philippines                  | PH       |
-| Poland                       | PL       |
-| Portugal                     | PT       |
-| Qatar                        | QA       |
-| Romania                      | RO       |
-| Russian Federation           | RU       |
-| Saudi Arabia                 | SA       |
-| Senegal                      | SN       |
-| Serbia                       | RS       |
-| Singapore                    | SG       |
-| Slovakia                     | SK       |
-| Slovenia                     | SI       |
-| South Africa                 | ZA       |
-| South Korea                  | KR       |
-| Spain                        | ES       |
-| Sri Lanka                    | LK       |
-| Sudan                        | SD       |
-| Sweden                       | SE       |
-| Switzerland                  | CH       |
-| Taiwan                       | TW       |
-| Tajikistan                   | TJ       |
-| Tanzania                     | TZ       |
-| Thailand                     | TH       |
-| Tunisia                      | TN       |
-| Turkey                       | TR       |
-| Turkmenistan                 | TM       |
-| Ukraine                      | UA       |
-| United Arab Emirates         | AE       |
-| United Kingdom               | UK       |
-| United States                | US       |
-| Uruguay                      | UY       |
-| Uzbekistan                   | UZ       |
-| Venezuela                    | VE       |
-| Vietnam                      | VN       |
+| Albania                      | `'AL'`   |
+| Algeria                      | `'DZ'`   |
+| Angola                       | `'AO'`   |
+| Argentina                    | `'AR'`   |
+| Australia                    | `'AU'`   |
+| Austria                      | `'AT'`   |
+| Azerbaijan                   | `'AZ'`   |
+| Bangladesh                   | `'BD'`   |
+| Belarus                      | `'BY'`   |
+| Belgium                      | `'BE'`   |
+| Bolivia                      | `'BO'`   |
+| Bosnia And Herzegovina       | `'BA'`   |
+| Brazil                       | `'BR'`   |
+| Bulgaria                     | `'BG'`   |
+| Cambodia                     | `'KH'`   |
+| Canada                       | `'CA'`   |
+| Chile                        | `'CL'`   |
+| China                        | `'CN'`   |
+| Colombia                     | `'CO'`   |
+| Costa Rica                   | `'CR'`   |
+| Croatia                      | `'HR'`   |
+| Cyprus                       | `'CY'`   |
+| Czechia                      | `'CZ'`   |
+| Democratic Republic Of Congo | `'CD'`   |
+| Denmark                      | `'DK'`   |
+| Dominican Republic           | `'DO'`   |
+| Ecuador                      | `'EC'`   |
+| Egypt                        | `'EG'`   |
+| El Salvador                  | `'SV'`   |
+| Estonia                      | `'EE'`   |
+| Ethiopia                     | `'ET'`   |
+| European Union               | `'EU'`   |
+| Finland                      | `'FI'`   |
+| France                       | `'FR'`   |
+| Germany                      | `'DE'`   |
+| Ghana                        | `'GH'`   |
+| Greece                       | `'GR'`   |
+| Guatemala                    | `'GT'`   |
+| Honduras                     | `'HN'`   |
+| Hong  Kong                   | `'HK'`   |
+| Hungary                      | `'HU'`   |
+| India                        | `'IN'`   |
+| Indonesia                    | `'ID'`   |
+| Iran                         | `'IR'`   |
+| Iraq                         | `'IQ'`   |
+| Ireland                      | `'IE'`   |
+| Israel                       | `'IL'`   |
+| Italy                        | `'IT'`   |
+| Japan                        | `'JP'`   |
+| Jordan                       | `'JO'`   |
+| Kazakhstan                   | `'KZ'`   |
+| Kenya                        | `'KE'`   |
+| Kuwait                       | `'KW'`   |
+| Kyrgyzstan                   | `'KG'`   |
+| Laos                         | `'LA'`   |
+| Latvia                       | `'LV'`   |
+| Lebanon                      | `'LB'`   |
+| Libya                        | `'LY'`   |
+| Lithuania                    | `'LT'`   |
+| Luxembourg                   | `'LU'`   |
+| Macao                        | `'MO'`   |
+| Malaysia                     | `'MY'`   |
+| Mexico                       | `'MX'`   |
+| Mongolia                     | `'MN'`   |
+| Morocco                      | `'MA'`   |
+| Myanmar                      | `'MM'`   |
+| Nepal                        | `'NP'`   |
+| Netherlands                  | `'NL'`   |
+| New Zealand                  | `'NZ'`   |
+| Nicaragua                    | `'NI'`   |
+| Nigeria                      | `'NG'`   |
+| Norway                       | `'NO'`   |
+| Oman                         | `'OM'`   |
+| Pakistan                     | `'PK'`   |
+| Panama                       | `'PA'`   |
+| Paraguay                     | `'PY'`   |
+| Peru                         | `'PE'`   |
+| Philippines                  | `'PH'`   |
+| Poland                       | `'PL'`   |
+| Portugal                     | `'PT'`   |
+| Qatar                        | `'QA'`   |
+| Romania                      | `'RO'`   |
+| Russian Federation           | `'RU'`   |
+| Saudi Arabia                 | `'SA'`   |
+| Senegal                      | `'SN'`   |
+| Serbia                       | `'RS'`   |
+| Singapore                    | `'SG'`   |
+| Slovakia                     | `'SK'`   |
+| Slovenia                     | `'SI'`   |
+| South Africa                 | `'ZA'`   |
+| South Korea                  | `'KR'`   |
+| Spain                        | `'ES'`   |
+| Sri Lanka                    | `'LK'`   |
+| Sudan                        | `'SD'`   |
+| Sweden                       | `'SE'`   |
+| Switzerland                  | `'CH'`   |
+| Taiwan                       | `'TW'`   |
+| Tajikistan                   | `'TJ'`   |
+| Tanzania                     | `'TZ'`   |
+| Thailand                     | `'TH'`   |
+| Tunisia                      | `'TN'`   |
+| Turkey                       | `'TR'`   |
+| Turkmenistan                 | `'TM'`   |
+| Ukraine                      | `'UA'`   |
+| United Arab Emirates         | `'AE'`   |
+| United Kingdom               | `'UK'`   |
+| United States                | `'US'`   |
+| Uruguay                      | `'UY'`   |
+| Uzbekistan                   | `'UZ'`   |
+| Venezuela                    | `'VE'`   |
+| Vietnam                      | `'VN'`   |
 </details>
 
 ### Methods
     
-| **Method**                                                   |
-| ------------------------------------------------------------ |
+| **Method**                                                     |
+| -------------------------------------------------------------- |
 | <details><summary>prices()</summary>...</details>              |
 | <details><summary>monthly_trade()</summary>...</details>       |
 | <details><summary>government_accounts()</summary>...</details> |
@@ -182,22 +183,24 @@ germany = Country('DE')
 
 ## Country group
 ```python
-germany = Country('DE')
+from prognosis import CountryGroup
+africa = CountryGroup('Africa')
+custom_group = CountryGroup(['RU', 'US', 'CN'])
 ```
 ### Available coutry groups
-| **Country**                  | **Countries** |
-| ---------------------------- | -------- |
-'Africa'| ['DZ', 'AO', 'CD', 'EG', 'ET', 'GH', 'KE', 'LY', 'MA', 'NG', 'SN', 'ZA', 'SD', 'TZ', 'TN'],
-'Central Asia'| ['AZ', 'KZ', 'KG', 'MN', 'TJ', 'TM', 'UZ'],
-'East Asia'| ['CN', 'HK', 'JP', 'KR', 'MO', 'TW'],
-'Europe'| ['AL', 'AT', 'BY', 'BE', 'BA', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'NL', 'NO', 'PL', 'PT', 'RO', 'RU', 'RS', 'SK', 'SI', 'ES', 'SE', 'CH', 'TR', 'UA', 'EU', 'UK'],
-'G20'| ['AR', 'AU', 'BR', 'CA', 'CN', 'FR', 'DE', 'IN', 'ID', 'IT', 'JP', 'KR', 'MX', 'RU', 'SA', 'ZA', 'TR', 'US', 'EU', 'UK'],
-'Latin America'| ['AR', 'BO', 'BR', 'CL', 'CO', 'CR', 'DO', 'EC', 'SV', 'GT', 'HN', 'NI', 'PA', 'PY', 'PE', 'UY', 'VE'],
-'Middle East'| ['IR', 'IQ', 'IL', 'JO', 'KW', 'LB', 'OM', 'QA', 'SA', 'AE'],
-'North America'| ['CA', 'MX', 'US'],
-'Oceania'| ['AU', 'NZ'],
-'South Asia'| ['BD', 'IN', 'NP', 'PK', 'LK'],
-'Southeast Asia'| ['KH', 'ID', 'LA', 'MY', 'MM', 'PH', 'SG', 'TH', 'VN']
+| **Group**      | **Included country codes**                                                                                                                                                                                                                   |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `'Africa'`         | ['DZ', 'AO', 'CD', 'EG', 'ET', 'GH', 'KE', 'LY', 'MA', 'NG', 'SN', 'ZA', 'SD', 'TZ', 'TN'],                                                                                                                                     |
+| `'Central Asia'`   | ['AZ', 'KZ', 'KG', 'MN', 'TJ', 'TM', 'UZ'],                                                                                                                                                                                     |
+| `'East Asia'`     | ['CN', 'HK', 'JP', 'KR', 'MO', 'TW'],                                                                                                                                                                                           |
+| `'Europe'`         | ['AL', 'AT', 'BY', 'BE', 'BA', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'NL', 'NO', 'PL', 'PT', 'RO', 'RU', 'RS', 'SK', 'SI', 'ES', 'SE', 'CH', 'TR', 'UA', 'EU', 'UK'], |
+| `'G20'`            | ['AR', 'AU', 'BR', 'CA', 'CN', 'FR', 'DE', 'IN', 'ID', 'IT', 'JP', 'KR', 'MX', 'RU', 'SA', 'ZA', 'TR', 'US', 'EU', 'UK'],                                                                                                       |
+| `'Latin America'`  | ['AR', 'BO', 'BR', 'CL', 'CO', 'CR', 'DO', 'EC', 'SV', 'GT', 'HN', 'NI', 'PA', 'PY', 'PE', 'UY', 'VE'],                                                                                                                         |
+| `'Middle East'`    | ['IR', 'IQ', 'IL', 'JO', 'KW', 'LB', 'OM', 'QA', 'SA', 'AE'],                                                                                                                                                                   |
+| `'North America'`  | ['CA', 'MX', 'US'],                                                                                                                                                                                                             |
+| `'Oceania'`        | ['AU', 'NZ'],                                                                                                                                                                                                                   |
+| `'South Asia'`     | ['BD', 'IN', 'NP', 'PK', 'LK'],                                                                                                                                                                                                 |
+| `'Southeast Asia'` | ['KH', 'ID', 'LA', 'MY', 'MM', 'PH', 'SG', 'TH', 'VN']                                                                                                                                                                          |
 
 ## Widget
 
