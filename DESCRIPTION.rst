@@ -42,6 +42,7 @@ Table of Contents
 -  `License <#license>`__ ## Installation
 
 This Python module provides a wrapper around the API of Econdb.com.
+You can also find Econdb on Github
 
 ::
 
