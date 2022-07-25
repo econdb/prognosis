@@ -32,6 +32,8 @@ class Country():
 
         Note: Real refers to inflation adjusted indicators
         """
+        if k.get('nominal') is True:
+            return self.get_group('national_accounts_nominal', **k)
         return self.get_group('national_accounts', **k)
 
     def prices(self, **k):

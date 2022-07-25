@@ -8,6 +8,8 @@ import pandas as pd
 topic_tickers = {
     'national_accounts':
         ['RGDP%s', 'RPRC%s', 'RPUC%s', 'RGFCF%s', 'REXP%s','RIMP%s'],
+    'national_accounts_nominal':
+        ['GDP%s', 'PRC%s', 'PUC%s', 'GFCF%s', 'EXP%s','IMP%s'],
     'prices': ['CPI%s', 'PPI%s'],
     'government': ['GSPE%s', 'GREV%s', 'GBAL%s', 'GDEBT%s'],
     'monthly_trade': ['EXPMON%s', 'IMPMON%s'],
