@@ -5,9 +5,8 @@ Created on Fri May 20 16:07:36 2022
 @author: oriol
 """
 
-import pandas as pd
 from prognosis.helper import get
-from prognosis.com import topic_tickers, topic_df, country_groups, country_df
+from prognosis.com import topic_df, country_groups, country_df
 
 
 topics = topic_df['code'].tolist()
@@ -19,7 +18,7 @@ class CountryGroup():
             self.country_list = country_groups[country_list]
         else:
             assert isinstance(country_list, list)
-            countries = country_df["iso2"].values()
+            countries = country_df["iso2"].values
             for country in country_list:
                 if not country in countries:
                     raise Exception("%s does not exist" % country)
